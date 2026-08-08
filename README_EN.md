@@ -1,7 +1,4 @@
-<p align="center">
-  <a href="README.md"><img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-Chinese-gray?style=for-the-badge" alt="中文"></a>
-  <a href="README_EN.md"><img src="https://img.shields.io/badge/English-English-blue?style=for-the-badge" alt="English"></a>
-</p>
+<p align="center">🌏 Language / 语言：**English** | [中文](README.md)</p>
 
 # bevylings 🦀🎮
 
