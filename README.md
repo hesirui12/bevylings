@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-Chinese-blue?style=for-the-badge" alt="中文"></a>
+  <a href="README_EN.md"><img src="https://img.shields.io/badge/English-English-gray?style=for-the-badge" alt="English"></a>
+</p>
+
 # bevylings 🦀🎮
 
 **用 Bevy 官方示例 + 官方学习指南做成的 rustlings 式练习工具。**
@@ -40,6 +45,8 @@ cargo build -p bevylings
 
 **Windows 用户**：也可以直接双击 `bevylings.bat`（首次运行自动编译 CLI），之后
 `bevylings list` 即可。也可将 `bevylings.bat` 所在目录加入 PATH，全局使用 `bevylings` 命令。
+
+> 🌏 语言切换 / Language: [中文](README.md) | [English](README_EN.md)
 
 ## 如何使用
 
