@@ -1,0 +1,699 @@
+{
+ "chapters": [
+  {
+   "num": 1,
+   "slug": "ch01_hello_engine",
+   "title": "你好，Bevy！",
+   "count": 6,
+   "sources": [
+    "_sources/bevy-src/examples/app/empty.rs",
+    "_sources/bevy-src/examples/app/empty_defaults.rs",
+    "_sources/learn/md/getting-started.md"
+   ],
+   "focus": "创建 App、添加 DefaultPlugins、run()、println 日志",
+   "exercises": [
+    "ex_0101",
+    "ex_0102",
+    "ex_0103",
+    "ex_0104",
+    "ex_0105",
+    "ex_0106"
+   ]
+  },
+  {
+   "num": 2,
+   "slug": "ch02_apps",
+   "title": "App 与应用",
+   "count": 6,
+   "sources": [
+    "_sources/bevy-src/examples/app/headless.rs",
+    "_sources/bevy-src/examples/app/no_renderer.rs",
+    "_sources/bevy-src/examples/app/logs.rs",
+    "_sources/bevy-src/examples/app/settings.rs",
+    "_sources/bevy-src/examples/app/return_after_run.rs",
+    "_sources/bevy-src/examples/app/custom_loop.rs",
+    "_sources/bevy-src/examples/app/thread_pool_resources.rs"
+   ],
+   "focus": "无窗口运行、ScheduleRunnerPlugin、日志级别、AppExit、手动 update 循环、线程池",
+   "exercises": [
+    "ex_0201",
+    "ex_0202",
+    "ex_0203",
+    "ex_0204",
+    "ex_0205",
+    "ex_0206"
+   ]
+  },
+  {
+   "num": 3,
+   "slug": "ch03_ecs",
+   "title": "ECS 实体组件系统",
+   "count": 7,
+   "sources": [
+    "_sources/bevy-src/examples/ecs/startup_system.rs",
+    "_sources/bevy-src/examples/ecs/ecs_guide.rs",
+    "_sources/bevy-src/examples/ecs/hierarchy.rs",
+    "_sources/learn/md/getting-started_ecs.md"
+   ],
+   "focus": "Entity、Component、Bundle、System、Query、Commands、Startup/Update 调度",
+   "exercises": [
+    "ex_0301",
+    "ex_0302",
+    "ex_0303",
+    "ex_0304",
+    "ex_0305",
+    "ex_0306",
+    "ex_0307"
+   ]
+  },
+  {
+   "num": 4,
+   "slug": "ch04_plugins",
+   "title": "插件",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/app/plugin.rs",
+    "_sources/bevy-src/examples/app/plugin_group.rs",
+    "_sources/learn/md/getting-started_plugins.md"
+   ],
+   "focus": "Plugin trait、插件组、插件配置、插件与系统/资源",
+   "exercises": [
+    "ex_0401",
+    "ex_0402",
+    "ex_0403",
+    "ex_0404"
+   ]
+  },
+  {
+   "num": 5,
+   "slug": "ch05_resources",
+   "title": "资源",
+   "count": 4,
+   "sources": [
+    "_sources/learn/md/getting-started_resources.md",
+    "_sources/bevy-src/examples/app/thread_pool_resources.rs",
+    "_sources/bevy-src/examples/ecs/immutable_components.rs"
+   ],
+   "focus": "Res/ResMut、init_resource/insert_resource/remove_resource、共享可变状态",
+   "exercises": [
+    "ex_0501",
+    "ex_0502",
+    "ex_0503",
+    "ex_0504"
+   ]
+  },
+  {
+   "num": 6,
+   "slug": "ch06_breakout",
+   "title": "打砖块小游戏",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/showcase/breakout.rs"
+   ],
+   "focus": "经典 Breakout：挡板、球、碰撞、计分（拆成小块学习）",
+   "exercises": [
+    "ex_0601",
+    "ex_0602",
+    "ex_0603",
+    "ex_0604"
+   ]
+  },
+  {
+   "num": 7,
+   "slug": "ch07_2d_basics",
+   "title": "2D 基础",
+   "count": 7,
+   "sources": [
+    "_sources/bevy-src/examples/2d/sprite.rs",
+    "_sources/bevy-src/examples/2d/2d_shapes.rs",
+    "_sources/bevy-src/examples/2d/move_sprite.rs",
+    "_sources/bevy-src/examples/2d/rotation.rs",
+    "_sources/bevy-src/examples/2d/transparency_2d.rs",
+    "_sources/bevy-src/examples/2d/mesh2d.rs",
+    "_sources/bevy-src/examples/2d/sprite_flipping.rs",
+    "_sources/bevy-src/examples/2d/sprite_scale.rs",
+    "_sources/bevy-src/examples/2d/text2d.rs"
+   ],
+   "focus": "Sprite、2D 形状、Transform 移动/旋转/缩放、透明度、Mesh2d、Text2d",
+   "exercises": [
+    "ex_0701",
+    "ex_0702",
+    "ex_0703",
+    "ex_0704",
+    "ex_0705",
+    "ex_0706",
+    "ex_0707"
+   ]
+  },
+  {
+   "num": 8,
+   "slug": "ch08_3d_basics",
+   "title": "3D 基础",
+   "count": 7,
+   "sources": [
+    "_sources/bevy-src/examples/3d/3d_shapes.rs",
+    "_sources/bevy-src/examples/3d/3d_scene.rs",
+    "_sources/bevy-src/examples/3d/lighting.rs",
+    "_sources/bevy-src/examples/3d/parenting.rs",
+    "_sources/bevy-src/examples/3d/transparency_3d.rs",
+    "_sources/bevy-src/examples/3d/orthographic.rs",
+    "_sources/bevy-src/examples/3d/vertex_colors.rs"
+   ],
+   "focus": "Mesh3d、Camera3d、灯光、材质、父子、透明度、正交相机",
+   "exercises": [
+    "ex_0801",
+    "ex_0802",
+    "ex_0803",
+    "ex_0804",
+    "ex_0805",
+    "ex_0806",
+    "ex_0807"
+   ]
+  },
+  {
+   "num": 9,
+   "slug": "ch09_animation",
+   "title": "动画",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/animation/animated_transform.rs",
+    "_sources/bevy-src/examples/animation/eased_motion.rs",
+    "_sources/bevy-src/examples/animation/easing_functions.rs",
+    "_sources/bevy-src/examples/animation/color_animation.rs",
+    "_sources/bevy-src/examples/animation/animation_events.rs"
+   ],
+   "focus": "AnimatedTransform、缓动、AnimationPlayer、动画事件",
+   "exercises": [
+    "ex_0901",
+    "ex_0902",
+    "ex_0903",
+    "ex_0904"
+   ]
+  },
+  {
+   "num": 10,
+   "slug": "ch10_audio",
+   "title": "音频",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/audio/audio.rs",
+    "_sources/bevy-src/examples/audio/audio_control.rs",
+    "_sources/bevy-src/examples/audio/play_sound_effect.rs",
+    "_sources/bevy-src/examples/audio/spatial_audio_3d.rs"
+   ],
+   "focus": "AudioPlayer、AudioBundle、音量/播放控制、PlaySoundEffect、空间音频",
+   "exercises": [
+    "ex_1001",
+    "ex_1002",
+    "ex_1003",
+    "ex_1004"
+   ]
+  },
+  {
+   "num": 11,
+   "slug": "ch11_camera",
+   "title": "摄像机",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/camera/camera_orbit.rs",
+    "_sources/bevy-src/examples/camera/pan_camera_controller.rs",
+    "_sources/bevy-src/examples/camera/projection_zoom.rs",
+    "_sources/bevy-src/examples/camera/2d_top_down_camera.rs",
+    "_sources/bevy-src/examples/camera/free_camera_controller.rs"
+   ],
+   "focus": "Camera2d/Camera3d、跟随、环绕、缩放、控制器",
+   "exercises": [
+    "ex_1101",
+    "ex_1102",
+    "ex_1103",
+    "ex_1104"
+   ]
+  },
+  {
+   "num": 12,
+   "slug": "ch12_diagnostics",
+   "title": "诊断与日志",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/diagnostics/log_diagnostics.rs",
+    "_sources/bevy-src/examples/diagnostics/custom_diagnostic.rs",
+    "_sources/bevy-src/examples/app/logs.rs"
+   ],
+   "focus": "FrameTimeDiagnostics、自定义 Diagnostic、LogPlugin 级别",
+   "exercises": [
+    "ex_1201",
+    "ex_1202",
+    "ex_1203"
+   ]
+  },
+  {
+   "num": 13,
+   "slug": "ch13_games",
+   "title": "小游戏合集",
+   "count": 5,
+   "sources": [
+    "_sources/bevy-src/examples/showcase/contributors.rs",
+    "_sources/bevy-src/examples/showcase/game_menu.rs",
+    "_sources/bevy-src/examples/showcase/loading_screen.rs",
+    "_sources/bevy-src/examples/showcase/alien_cake_addict.rs"
+   ],
+   "focus": "综合小游戏：菜单、加载屏、弹跳球、吃蛋糕",
+   "exercises": [
+    "ex_1301",
+    "ex_1302",
+    "ex_1303",
+    "ex_1304",
+    "ex_1305"
+   ]
+  },
+  {
+   "num": 14,
+   "slug": "ch14_gizmos",
+   "title": "调试绘制",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/gizmos/2d_gizmos.rs",
+    "_sources/bevy-src/examples/gizmos/3d_gizmos.rs",
+    "_sources/bevy-src/examples/gizmos/axes.rs",
+    "_sources/bevy-src/examples/gizmos/transform_gizmo.rs",
+    "_sources/bevy-src/examples/gizmos/2d_text_gizmos.rs"
+   ],
+   "focus": "Gizmos：线/圆/矩形/轴、2D/3D、调试可视化",
+   "exercises": [
+    "ex_1401",
+    "ex_1402",
+    "ex_1403",
+    "ex_1404"
+   ]
+  },
+  {
+   "num": 15,
+   "slug": "ch15_math",
+   "title": "数学",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/math/cubic_splines.rs",
+    "_sources/bevy-src/examples/math/random_sampling.rs",
+    "_sources/bevy-src/examples/math/custom_primitives.rs",
+    "_sources/bevy-src/examples/math/bounding_2d.rs",
+    "_sources/bevy-src/examples/math/render_primitives.rs"
+   ],
+   "focus": "Vec2/Vec3 运算、样条、随机、边界盒、数学原语",
+   "exercises": [
+    "ex_1501",
+    "ex_1502",
+    "ex_1503",
+    "ex_1504"
+   ]
+  },
+  {
+   "num": 16,
+   "slug": "ch16_scene",
+   "title": "场景",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/scene/bsn.rs",
+    "_sources/bevy-src/examples/scene/world_serialization.rs",
+    "_sources/bevy-src/examples/3d/3d_scene.rs"
+   ],
+   "focus": "BSN 场景标记、SceneRoot、世界序列化、加载场景",
+   "exercises": [
+    "ex_1601",
+    "ex_1602",
+    "ex_1603",
+    "ex_1604"
+   ]
+  },
+  {
+   "num": 17,
+   "slug": "ch17_state",
+   "title": "状态管理",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/state/states.rs",
+    "_sources/bevy-src/examples/state/computed_states.rs",
+    "_sources/bevy-src/examples/state/sub_states.rs",
+    "_sources/bevy-src/examples/state/custom_transitions.rs"
+   ],
+   "focus": "States、init_state、OnEnter/OnExit、计算状态、子状态、自定义转移",
+   "exercises": [
+    "ex_1701",
+    "ex_1702",
+    "ex_1703",
+    "ex_1704"
+   ]
+  },
+  {
+   "num": 18,
+   "slug": "ch18_time",
+   "title": "时间与计时器",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/time/time.rs",
+    "_sources/bevy-src/examples/time/timers.rs",
+    "_sources/bevy-src/examples/time/virtual_time.rs",
+    "_sources/bevy-src/examples/ecs/fixed_timestep.rs"
+   ],
+   "focus": "Time、delta_secs、Timer、Stopwatch、虚拟时间、固定时间步",
+   "exercises": [
+    "ex_1801",
+    "ex_1802",
+    "ex_1803",
+    "ex_1804"
+   ]
+  },
+  {
+   "num": 19,
+   "slug": "ch19_transform",
+   "title": "变换",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/transforms/transform.rs",
+    "_sources/bevy-src/examples/transforms/translation.rs",
+    "_sources/bevy-src/examples/transforms/3d_rotation.rs",
+    "_sources/bevy-src/examples/transforms/scale.rs",
+    "_sources/bevy-src/examples/transforms/align.rs"
+   ],
+   "focus": "Transform/GlobalTransform、translate/rotate/scale、LookAt、align",
+   "exercises": [
+    "ex_1901",
+    "ex_1902",
+    "ex_1903",
+    "ex_1904"
+   ]
+  },
+  {
+   "num": 20,
+   "slug": "ch20_input",
+   "title": "输入",
+   "count": 6,
+   "sources": [
+    "_sources/bevy-src/examples/input/keyboard_input.rs",
+    "_sources/bevy-src/examples/input/mouse_input.rs",
+    "_sources/bevy-src/examples/input/touch_input.rs",
+    "_sources/bevy-src/examples/input/gamepad_input.rs",
+    "_sources/bevy-src/examples/input/keyboard_modifiers.rs",
+    "_sources/bevy-src/examples/input/char_input_events.rs",
+    "_sources/bevy-src/examples/input/mouse_input_events.rs",
+    "_sources/bevy-src/examples/input/gamepad_input_events.rs",
+    "_sources/bevy-src/examples/input/keyboard_input_events.rs"
+   ],
+   "focus": "ButtonInput、键盘/鼠标/触摸/手柄、just_pressed、修饰键、输入事件",
+   "exercises": [
+    "ex_2001",
+    "ex_2002",
+    "ex_2003",
+    "ex_2004",
+    "ex_2005",
+    "ex_2006"
+   ]
+  },
+  {
+   "num": 21,
+   "slug": "ch21_ui",
+   "title": "UI 用户界面",
+   "count": 7,
+   "sources": [
+    "_sources/bevy-src/examples/ui/widgets/button.rs",
+    "_sources/bevy-src/examples/ui/widgets/standard_widgets.rs",
+    "_sources/bevy-src/examples/ui/widgets/feathers_counter.rs",
+    "_sources/bevy-src/examples/ui/text/text.rs",
+    "_sources/bevy-src/examples/ui/layout/flex_layout.rs",
+    "_sources/bevy-src/examples/ui/layout/anchor_layout.rs",
+    "_sources/bevy-src/examples/ui/layout/size_constraints.rs",
+    "_sources/bevy-src/examples/ui/styling/borders.rs",
+    "_sources/bevy-src/examples/ui/images/image_node.rs",
+    "_sources/bevy-src/examples/ui/relative_cursor_position.rs",
+    "_sources/bevy-src/examples/ui/ui_scaling.rs"
+   ],
+   "focus": "Node、Text、Button、Interaction、Flex 布局、锚点、边框、图片节点",
+   "exercises": [
+    "ex_2101",
+    "ex_2102",
+    "ex_2103",
+    "ex_2104",
+    "ex_2105",
+    "ex_2106",
+    "ex_2107"
+   ]
+  },
+  {
+   "num": 22,
+   "slug": "ch22_window",
+   "title": "窗口",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/window/window_settings.rs",
+    "_sources/bevy-src/examples/window/window_resizing.rs",
+    "_sources/bevy-src/examples/window/multiple_windows.rs",
+    "_sources/bevy-src/examples/window/clear_color.rs",
+    "_sources/bevy-src/examples/window/scale_factor_override.rs",
+    "_sources/bevy-src/examples/window/monitor_info.rs"
+   ],
+   "focus": "WindowPlugin、分辨率/标题/模式、多窗口、ClearColor、缩放因子",
+   "exercises": [
+    "ex_2201",
+    "ex_2202",
+    "ex_2203",
+    "ex_2204"
+   ]
+  },
+  {
+   "num": 23,
+   "slug": "ch23_movement",
+   "title": "移动",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/movement/smooth_follow.rs",
+    "_sources/bevy-src/examples/movement/physics_in_fixed_timestep.rs",
+    "_sources/bevy-src/examples/2d/rotate_to_cursor.rs",
+    "_sources/bevy-src/examples/2d/2d_viewport_to_world.rs"
+   ],
+   "focus": "平滑跟随、固定时间步物理、转向、屏幕坐标与世界坐标",
+   "exercises": [
+    "ex_2301",
+    "ex_2302",
+    "ex_2303"
+   ]
+  },
+  {
+   "num": 24,
+   "slug": "ch24_async_tasks",
+   "title": "异步任务",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/async_tasks/async_compute.rs",
+    "_sources/bevy-src/examples/async_tasks/async_channel_pattern.rs",
+    "_sources/bevy-src/examples/async_tasks/external_source_external_thread.rs"
+   ],
+   "focus": "AsyncComputeTaskPool、spawn、轮询 Task、异步加载",
+   "exercises": [
+    "ex_2401",
+    "ex_2402",
+    "ex_2403"
+   ]
+  },
+  {
+   "num": 25,
+   "slug": "ch25_shaders",
+   "title": "着色器入门",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/shader/shader_material.rs",
+    "_sources/bevy-src/examples/shader/animate_shader.rs",
+    "_sources/bevy-src/examples/shader/shader_material_2d.rs"
+   ],
+   "focus": "自定义材质、WGSL 内联、uniform、2D 着色器",
+   "exercises": [
+    "ex_2501",
+    "ex_2502",
+    "ex_2503"
+   ]
+  },
+  {
+   "num": 26,
+   "slug": "ch26_gltf",
+   "title": "glTF 模型",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/gltf/load_gltf.rs",
+    "_sources/bevy-src/examples/gltf/update_gltf_scene.rs",
+    "_sources/bevy-src/examples/gltf/query_gltf_primitives.rs",
+    "_sources/bevy-src/examples/gltf/edit_material_on_gltf.rs"
+   ],
+   "focus": "加载 .glb/.gltf、SceneRoot、遍历网格、修改材质",
+   "exercises": [
+    "ex_2601",
+    "ex_2602",
+    "ex_2603",
+    "ex_2604"
+   ]
+  },
+  {
+   "num": 27,
+   "slug": "ch27_picking",
+   "title": "拾取点击",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/picking/simple_picking.rs",
+    "_sources/bevy-src/examples/picking/mesh_picking.rs",
+    "_sources/bevy-src/examples/picking/sprite_picking.rs",
+    "_sources/bevy-src/examples/picking/debug_picking.rs",
+    "_sources/bevy-src/examples/picking/dragdrop_picking.rs"
+   ],
+   "focus": "Pointer<Over>/<Click>、拾取事件、拖拽、调试显示",
+   "exercises": [
+    "ex_2701",
+    "ex_2702",
+    "ex_2703",
+    "ex_2704"
+   ]
+  },
+  {
+   "num": 28,
+   "slug": "ch28_assets",
+   "title": "资产管理",
+   "count": 5,
+   "sources": [
+    "_sources/bevy-src/examples/asset/asset_loading.rs",
+    "_sources/bevy-src/examples/asset/hot_asset_reloading.rs",
+    "_sources/bevy-src/examples/asset/embedded_asset.rs",
+    "_sources/bevy-src/examples/asset/generated_assets.rs",
+    "_sources/bevy-src/examples/asset/asset_settings.rs",
+    "_sources/bevy-src/examples/asset/alter_sprite.rs"
+   ],
+   "focus": "AssetServer、load 回调、热重载、嵌入资产、生成资产",
+   "exercises": [
+    "ex_2801",
+    "ex_2802",
+    "ex_2803",
+    "ex_2804",
+    "ex_2805"
+   ]
+  },
+  {
+   "num": 29,
+   "slug": "ch29_events",
+   "title": "事件与观察者",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/ecs/message.rs",
+    "_sources/bevy-src/examples/ecs/callbacks.rs",
+    "_sources/bevy-src/examples/ecs/observers.rs",
+    "_sources/bevy-src/examples/ecs/component_hooks.rs"
+   ],
+   "focus": "Message/MessageWriter/MessageReader、触发事件、On<Event>、组件生命周期回调",
+   "exercises": [
+    "ex_2901",
+    "ex_2902",
+    "ex_2903",
+    "ex_2904"
+   ]
+  },
+  {
+   "num": 30,
+   "slug": "ch30_run_conditions",
+   "title": "运行条件",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/ecs/run_conditions.rs",
+    "_sources/bevy-src/examples/ecs/system_piping.rs",
+    "_sources/bevy-src/examples/ecs/state_scoped.rs"
+   ],
+   "focus": "run_if、condition 组合、系统管道、状态作用域",
+   "exercises": [
+    "ex_3001",
+    "ex_3002",
+    "ex_3003"
+   ]
+  },
+  {
+   "num": 31,
+   "slug": "ch31_fixed_timestep",
+   "title": "固定时间步",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/ecs/fixed_timestep.rs",
+    "_sources/bevy-src/examples/movement/physics_in_fixed_timestep.rs"
+   ],
+   "focus": "FixedUpdate 调度、Time<Fixed>、固定步长物理、插值",
+   "exercises": [
+    "ex_3101",
+    "ex_3102",
+    "ex_3103"
+   ]
+  },
+  {
+   "num": 32,
+   "slug": "ch32_change_detection",
+   "title": "变更检测",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/ecs/change_detection.rs",
+    "_sources/bevy-src/examples/ecs/removal_detection.rs",
+    "_sources/bevy-src/examples/ecs/entity_disabling.rs"
+   ],
+   "focus": "Added/Changed、RemovedComponents、EntityDisabled",
+   "exercises": [
+    "ex_3201",
+    "ex_3202",
+    "ex_3203"
+   ]
+  },
+  {
+   "num": 33,
+   "slug": "ch33_hierarchy",
+   "title": "层级与父子关系",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/ecs/hierarchy.rs",
+    "_sources/bevy-src/examples/ecs/relationships.rs",
+    "_sources/bevy-src/examples/3d/parenting.rs"
+   ],
+   "focus": "Parent/Children、add_child、全局变换、关系组件",
+   "exercises": [
+    "ex_3301",
+    "ex_3302",
+    "ex_3303"
+   ]
+  },
+  {
+   "num": 34,
+   "slug": "ch34_ecs_advanced",
+   "title": "高级 ECS",
+   "count": 4,
+   "sources": [
+    "_sources/bevy-src/examples/ecs/one_shot_systems.rs",
+    "_sources/bevy-src/examples/ecs/generic_system.rs",
+    "_sources/bevy-src/examples/ecs/parallel_query.rs",
+    "_sources/bevy-src/examples/ecs/custom_schedule.rs",
+    "_sources/bevy-src/examples/ecs/iter_combinations.rs",
+    "_sources/bevy-src/examples/ecs/delayed_commands.rs"
+   ],
+   "focus": "OneShotSystem、泛型系统、并行查询、自定义调度、组合迭代",
+   "exercises": [
+    "ex_3401",
+    "ex_3402",
+    "ex_3403",
+    "ex_3404"
+   ]
+  },
+  {
+   "num": 35,
+   "slug": "ch35_tips",
+   "title": "实用技巧",
+   "count": 3,
+   "sources": [
+    "_sources/bevy-src/examples/usage/cooldown.rs",
+    "_sources/bevy-src/examples/app/log_layers.rs",
+    "_sources/bevy-src/examples/app/without_winit.rs"
+   ],
+   "focus": "冷却计时、日志分层、无 winit 运行、任务队列",
+   "exercises": [
+    "ex_3501",
+    "ex_3502",
+    "ex_3503"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = ["bevylings", "exercises", "solutions"]
+
+# 磁盘友好：关闭 MSVC PDB 调试符号生成（否则每个练习的编译都会堆一个 200MB+ 的 pdb）
+# 编译器报错信息不受影响，仍带行号；Bevy 全量编译也小很多。
+[profile.dev]
+debug = "none"
+incremental = false

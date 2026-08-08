@@ -1,0 +1,18 @@
+2103
+   Compiling solutions v0.1.0 (C:\Users\jcsyh\Documents\AI夜间巡航\bevylings\solutions)
+error[E0599]: no variant, associated function, or constant named `RED` found for enum `bevy::bevy_color::Color` in the current scope
+  --> solutions\src\chapters\ch21_ui\exercise_03.rs:49:40
+   |
+49 |                 BackgroundColor(Color::RED),
+   |                                        ^^^ variant, associated function, or constant not found in `bevy::bevy_color::Color`
+
+error[E0599]: no variant, associated function, or constant named `BLUE` found for enum `bevy::bevy_color::Color` in the current scope
+  --> solutions\src\chapters\ch21_ui\exercise_03.rs:57:40
+   |
+57 |                 BackgroundColor(Color::BLUE),
+   |                                        ^^^^ variant, associated function, or constant not found in `bevy::bevy_color::Color`
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `solutions` (bin "solutions" test) due to 2 previous errors
+
+----------------------------------------
